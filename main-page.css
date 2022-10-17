@@ -1,3 +1,36 @@
 .background_main {
     background-image: url(image/two_dots.png);
-     }
+}
+.frame_main {
+    border: 1px solid #c9c9c9;
+    border-radius: 10px;
+    width: 1200px;
+   
+    margin-left:75px;
+    margin-top: 37.5px;
+}
+div.white_color_flag {
+    
+    background-color: white;
+    width: 1100px;
+    height: 200px;
+    
+}
+div.yellow_color_flag {
+    background-color: #ffff00;
+    width: 1100px;
+    height: 10px;
+
+}
+div.blue_color_flag {
+    background-color: #4fb9e3;
+    width: 1100px;
+    height: 200px;
+    
+}
+#flag {
+    margin: 50px;
+
+    
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+}
