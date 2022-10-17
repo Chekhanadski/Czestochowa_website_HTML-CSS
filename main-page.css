@@ -6,13 +6,13 @@
 }
 
 .frame_main {
-    border: 1px solid #c9c9c9;
+    border: 2px solid #c9c9c9;
     border-radius: 10px;
     width: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 25px 0 25px 0;
+    margin: 10px 0 10px 0;
     
 }
 div.white_color_flag {
@@ -20,6 +20,9 @@ div.white_color_flag {
     background-color: white;
     width: 900px;
     height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 div.yellow_color_flag {
@@ -32,7 +35,9 @@ div.blue_color_flag {
     background-color: #4fb9e3;
     width: 900px;
     height: 150px;
-    
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start ;
 }
 #flag {
     margin-top: 40px;
@@ -40,6 +45,37 @@ div.blue_color_flag {
 }
 img.main_place {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    margin-top: -50px;
+    display: flex;
+    position: relative;
+    top: -75px;
+    
     border-radius: 15px;
+    z-index: 3;
 }
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: black;
+    position:relative; 
+    top: 20px;
+}
+div.text {
+    width: 860px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    margin-top: 150px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:justify;
+    padding: 120px 20px 20px 20px;
+    top: -320px;
+    background-color: white;
+    z-index: 1;
+    
+}
+    
