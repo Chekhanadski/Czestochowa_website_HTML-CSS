@@ -41,10 +41,10 @@ div.blue_color_flag {
 }
 #flag {
     margin-top: 40px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); 
 }
 img.main_place {
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     display: flex;
     position: relative;
     top: -75px;
@@ -52,18 +52,18 @@ img.main_place {
     border-radius: 15px;
     z-index: 3;
 }
-a {
+div.blue_color_flag a {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
     font-weight: bold;
-    color: black;
+    color: white;
     position:relative; 
     top: 20px;
 }
 div.text {
     width: 860px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     margin-top: 150px;
     border-radius: 15px;
     display: flex;
@@ -76,6 +76,59 @@ div.text {
     top: -320px;
     background-color: white;
     z-index: 1;
-    
 }
-    
+div.footer {
+    width: 850px;
+    height: 100px;
+    margin-bottom: 40px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    background-color: #4fb9e3;
+}
+div.menu {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 60px;
+    width: 700px;
+}
+div.menu a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    position:relative; 
+    top: 20px;
+}
+.icons {
+    font-size: 25px;
+    position: relative;
+    top: 20px;
+    height: 40px;
+    width: 100px;
+}
+.fa-envelope, .fa-facebook, .fa-instagram {
+    color: white;
+    text-decoration: none;
+}
+.designed {
+    font-style: italic;
+    font-size: 15px;
+    color:white; 
+    display: flex;
+    position: relative;
+    left: 220px;
+    top: -12px;
+}
+.block_menu_and_icons {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+
+
