@@ -16,20 +16,17 @@
     
 }
 div.white_color_flag {
-    
     background-color: white;
     width: 900px;
     height: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 div.yellow_color_flag {
     background-color: #ffff00;
     width: 900px;
     height: 10px;
-
 }
 div.blue_color_flag {
     background-color: #4fb9e3;
@@ -52,7 +49,7 @@ img.main_place {
     border-radius: 15px;
     z-index: 3;
 }
-div.blue_color_flag a {
+div.blue_color_flag a { 
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 26px;
@@ -61,14 +58,18 @@ div.blue_color_flag a {
     position:relative; 
     top: 20px;
 }
+div.blue_color_flag a:hover {
+    text-shadow: 10px 10px 10px #d1d1d1;
+}
+div.blue_color_flag a:active {
+    text-shadow: 3px 3px 5px #a09d9d;
+}
 div.text {
     width: 860px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    margin-top: 150px;
+    margin-top: -150px;
+    margin-bottom: 40px;
     border-radius: 15px;
-    display: flex;
-    flex-direction: column;
-    position: relative;
     font-size: 18px;
     font-family: Arial, Helvetica, sans-serif;
     text-align:justify;
@@ -87,7 +88,7 @@ div.footer {
     justify-content: space-around;
     background-color: #4fb9e3;
 }
-div.menu {
+div.menu { 
 
     display:flex;
     flex-direction: row;
@@ -103,6 +104,13 @@ div.menu a {
     color: white;
     position:relative; 
     top: 20px;
+    height: 20px;
+}
+div.menu a:hover {
+    text-shadow: 10px 10px 10px #d1d1d1;
+}
+div.menu a:active {
+    text-shadow: 3px 3px 5px #a09d9d;
 }
 .icons {
     font-size: 25px;
@@ -111,11 +119,19 @@ div.menu a {
     height: 40px;
     width: 100px;
 }
+
 .fa-envelope, .fa-facebook, .fa-instagram {
     color: white;
     text-decoration: none;
+
 }
-.designed {
+.fa-envelope:hover, .fa-facebook:hover, .fa-instagram:hover {
+    text-shadow: 5px 5px 10px #d1d1d1;
+}
+.fa-envelope:active, .fa-facebook:active, .fa-instagram:active {
+    text-shadow: 3px 3px 5px #a09d9d;
+}
+.designed { 
     font-style: italic;
     font-size: 15px;
     color:white; 
@@ -123,6 +139,7 @@ div.menu a {
     position: relative;
     left: 220px;
     top: -12px;
+    width: 300px;
 }
 .block_menu_and_icons {
     display:flex;
