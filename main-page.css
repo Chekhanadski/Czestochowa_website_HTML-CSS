@@ -54,9 +54,9 @@
     text-shadow: 10px 10px 10px #d1d1d1;
 }
 
-.menu_a:active {
+/*.menu_a:active {
     text-shadow: 3px 3px 5px #a09d9d;
-}
+}*/
 
 .text {
     width: 860px;
@@ -105,14 +105,14 @@
 .menu_footer_a:hover {    
     text-shadow: 10px 10px 10px #d1d1d1;
     color:yellow;
-    transition:1s;
+    transition:0.5s;
     transform: scale(1.05);
 }
 
 .menu_footer_a:active {    
     text-shadow: 3px 3px 5px #a09d9d;
     color: white;
-    transition:1s;
+    transition:0.5s;
     transform: scale(1);
 }
 
@@ -132,14 +132,14 @@
 .fa-envelope:hover, .fa-facebook:hover, .fa-instagram:hover {   
     color: yellow;
     text-shadow: 5px 5px 10px #d1d1d1;
-    transition:1s;
+    transition:0.5s;
     transform: scale(1.2);    
 }
 
 .fa-envelope:active, .fa-facebook:active, .fa-instagram:active {    
     color:white;
     text-shadow: 3px 3px 5px #a09d9d;
-    transition:1s;
+    transition:0.5s;
     transform: scale(1);
 }
 
@@ -190,16 +190,16 @@ nav {
 
 .menu_li:hover .menu_a{
     color: yellow;    
-    transition:1s;
+    transition:0.5s;
     transform: scale(1.05);
     text-shadow: 10px 10px 10px #d1d1d1;
 }
 
-.menu_li:active .menu_a {
+/*.menu_li:active .menu_a {
     color: white; 
     transform: scale(1);
     transition: 0.5s;       
-}
+}*/
 
 .image { 
     width:850px;
@@ -297,14 +297,15 @@ nav {
 }
 
 .dropdown-content {
-    min-width: auto;
+    /*min-width: 195px;*/
+    width: max-content;
     display: none;
-    padding: 10px 10px;
+    padding: 5px 5px;
     top: 35px;
     font-size: 15px;    
     font-weight: bold;
     text-transform: uppercase;
-    background-color: rgba(2, 2, 2, 0.425);
+    background-color: rgba(2, 2, 2, 0.596);
     border-radius: 10px;
     position: absolute;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);    
@@ -317,20 +318,29 @@ nav {
 
 .dropdown_a {    
     display: block;
-    padding: 5px 5px;
+    padding: 7px 7px;
     color: white;
-    text-decoration: none;    
+    text-decoration: none;          
+}
+
+.dropdown_li:not(:last-of-type) {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 }
 
 .dropdown_a:hover {
     color: yellow;
+    transform: scale(1.02);
+    transition: 0.2s;  
 }
 
 .dropdown_a:active {
-    color: white;
+    color: white; 
+    transform: scale(1);
+    transition: 0.5s;  
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 /*MENU END*/
