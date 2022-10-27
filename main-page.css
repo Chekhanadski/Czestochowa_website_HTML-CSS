@@ -54,10 +54,6 @@
     text-shadow: 10px 10px 10px #d1d1d1;
 }
 
-/*.menu_a:active {
-    text-shadow: 3px 3px 5px #a09d9d;
-}*/
-
 .text {
     width: 860px;
     margin-top: 150px;
@@ -67,7 +63,6 @@
     font-size: 18px;
     background-color: white;
     border-radius: 15px;
-    top: -320px;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
@@ -195,12 +190,6 @@ nav {
     text-shadow: 10px 10px 10px #d1d1d1;
 }
 
-/*.menu_li:active .menu_a {
-    color: white; 
-    transform: scale(1);
-    transition: 0.5s;       
-}*/
-
 .image { 
     width:850px;
     height:313px;
@@ -211,6 +200,11 @@ nav {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
     list-style:none;
+}
+
+.menu_active_buttom {
+    color: yellow; 
+    text-shadow: 10px 10px 10px #d1d1d1;
 }
 
 .main_page:hover ~.image {
@@ -297,7 +291,6 @@ nav {
 }
 
 .dropdown-content {
-    /*min-width: 195px;*/
     width: max-content;
     display: none;
     padding: 5px 5px;
