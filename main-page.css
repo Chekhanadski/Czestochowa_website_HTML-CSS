@@ -50,11 +50,11 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); 
 }
 
-.menu_a:hover {
+.menu_item_link:hover {
     text-shadow: 10px 10px 10px #d1d1d1;
 }
 
-.text {
+.content_and_footer {
     width: 860px;
     margin-top: 150px;
     margin-bottom: 40px;    
@@ -87,7 +87,7 @@
     justify-content: space-around;    
 }
 
-.menu_footer_a {
+.menu_footer_link {
     height: 20px;        
     font-size: 21px;
     font-weight: bold;
@@ -97,14 +97,14 @@
     top: 20px;            
 }
 
-.menu_footer_a:hover {    
+.menu_footer_link:hover {    
     text-shadow: 10px 10px 10px #d1d1d1;
     color:yellow;
     transition:0.5s;
     transform: scale(1.05);
 }
 
-.menu_footer_a:active {    
+.menu_footer_link:active {    
     text-shadow: 3px 3px 5px #a09d9d;
     color: white;
     transition:0.5s;
@@ -163,12 +163,12 @@ nav {
     align-items: flex-start;
 }
 
-.menu_ul {
+.menu_list {
     margin-top: 20px;
     position: relative;    
 }
 
-.menu_a {
+.menu_item_link {
     display: inline-flex;
     padding: 5px 14.2px;    
     font-size: 23px;    
@@ -178,12 +178,12 @@ nav {
     text-transform: uppercase; /*все символы прописные*/
 }
 
-.menu_li {
+.menu_item {
     list-style:none;
     float:left;
 }
 
-.menu_li:hover .menu_a{
+.menu_item:hover .menu_item_link{
     color: yellow;    
     transition:0.5s;
     transform: scale(1.05);
@@ -200,11 +200,6 @@ nav {
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
     transition: 0.5s;
     list-style:none;
-}
-
-.menu_active_buttom {
-    color: yellow; 
-    text-shadow: 10px 10px 10px #d1d1d1;
 }
 
 .main_page:hover ~.image {
@@ -285,12 +280,12 @@ nav {
     transition: 0.5s;
 }
 
-.dropdown {    
+.sub-menu {    
     display: inline-block;
     position: relative;
 }
 
-.dropdown-content {
+.sub-menu_list {
     width: max-content;
     display: none;
     padding: 5px 5px;
@@ -305,34 +300,34 @@ nav {
     z-index: 22;
 }
 
-.dropdown_li {
+.sub-menu_item {
     list-style:none;
 }
 
-.dropdown_a {    
+.sub-menu_item_link {    
     display: block;
     padding: 7px 7px;
     color: white;
     text-decoration: none;          
 }
 
-.dropdown_li:not(:last-of-type) {
+.sub-menu_item:not(:last-of-type) {
     border-bottom: 1px solid rgba(255, 255, 255, 0.103);
 }
 
-.dropdown_a:hover {
+.sub-menu_item_link:hover {
     color: yellow;
     transform: scale(1.02);
     transition: 0.2s;  
 }
 
-.dropdown_a:active {
+.sub-menu_item_link:active {
     color: white; 
     transform: scale(1);
     transition: 0.5s;  
 }
 
-.dropdown:hover .dropdown-content {
+.sub-menu:hover .sub-menu_list {
     display: block;
 }
 
