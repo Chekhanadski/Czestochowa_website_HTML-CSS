@@ -2,16 +2,17 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
-.background_main {
+.container {
     display: flex;    
     justify-content: center;
     background-image: url(image/two_dots.png);
 }
 
-.frame_main {
-    max-width: 1000px;   
+.frame {
+    max-width: 1000px;
     display: flex;
     margin: -40px;
     flex-direction: column;
@@ -25,7 +26,8 @@
     margin: 40px;
 }
 
-.white_color_flag {
+/* HEADER */
+.header-line-top {
     max-width: 900px;
     max-height: 150px;
     display: flex;
@@ -34,20 +36,19 @@
     background-color: white;
 }
 
-.logo {
+.header-logo {
     padding: 30px 0 30px 0;
 }
 
-.yellow_color_flag {    
+.header-line-middle {    
     max-width: 900px;                
     height: 10px;
     background-color: #ffff00;
-    
 }
 
-.blue_color_flag {    
+.header-line-bottom {    
     max-width: 900px;
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: flex-start ;
@@ -55,7 +56,7 @@
     position: relative;
 }
 
-.flag {    
+.header {    
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3); 
 }
 
@@ -66,33 +67,100 @@
 .header-wrapper {
     display: none;
 }
+/* HEADER END */
 
-.content_and_footer {
+/* CONTENT */
+.content-and-footer {
     max-width: 860px;
-    margin-top: 150px;
-    margin-bottom: 0px;    
+    margin-top: 30px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
     text-align:justify;
-    padding: 120px 20px 20px 20px;    
-    font-size: 18px;
+    padding: 20px 20px 20px 20px;    
+    font-size: 20px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
-/*FOOTER START*/
+.content {
+    padding: 15px 15px 15px 15px;    
+}
+
+.content-text-element {
+    margin-bottom: 13px;
+}
+
+.name-page {
+    margin: 10px 0 0px 0;
+    padding: 5px 0 10px 0;
+    font-size: 40px;   
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px #00000042;     
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);   
+}
+
+.image-center {
+    margin: 30px 0 30px 0; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-center:hover {
+    opacity: 0.8;
+}
+
+.image-left {
+    margin: 15px 15px 15px 15px; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-left-block {
+    margin: 15px 20px 15px 0; 
+    padding-bottom:10px;   
+    font-size: 15px;     
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    float: left;   
+}
+
+.image-right {
+    margin: 15px 15px 15px 15px; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-right-block {
+    margin: 15px 0px 15px 20px;
+    padding-bottom: 10px;     
+    font-size: 15px;     
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    float: right;   
+}
+/*CONTENT END*/
+
+/* FOOTER */
 .footer {
+    width: 100%;
     max-width: 850px;
     height: 100px;
     display:flex;
     flex-direction:column;
     justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 30px;    
+    margin-top: 10px;
+    margin-bottom: 20px;    
     background-color: #4fb9e3;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
 
-.menu_footer { 
+.menu-footer { 
     max-width: 700px;
     height: 60px;
     display:flex;
@@ -100,7 +168,7 @@
     justify-content: space-around;    
 }
 
-.menu_footer_link {
+.menu-footer_link {
     height: 20px;
     padding-right: 10px;        
     font-size: 21px;
@@ -111,14 +179,14 @@
     top: 20px;            
 }
 
-.menu_footer_link:hover {    
+.menu-footer_link:hover {    
     text-shadow: 10px 10px 10px #d1d1d1;
     color:yellow;
     transition:0.5s;
     transform: scale(1.05);
 }
 
-.menu_footer_link:active {    
+.menu-footer_link:active {    
     text-shadow: 3px 3px 5px #a09d9d;
     color: white;
     transition:0.5s;
@@ -163,14 +231,14 @@
     top: -12px;    
 }
 
-.block_menu_footer_and_icons {
+.menu-footer-and-icons {
     display:flex;
     flex-direction: row;
     justify-content: space-around;
 }
-/*FOOTER END*/
+/* FOOTER END */
 
-/*MENU START*/
+/* MENU */
 nav {
     display: flex;
     justify-content: center;
@@ -178,7 +246,7 @@ nav {
 }
 
 .menu_list {
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;    
 }
 
@@ -202,97 +270,6 @@ nav {
     transition:0.5s;
     transform: scale(1.05);
     text-shadow: 10px 10px 10px #d1d1d1;
-}
-
-.image { 
-    width:815px;
-    height:300px;
-    background-image: url(image/main-place.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;
-    left: 17.5px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
-    list-style:none;
-}
-
-.main_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;    
-    background: url(image/main-place.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
- }
-
-.churchs_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;
-    background: url(image/jasna_góra.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.castles_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;
-    background: url(image/castles.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.parks_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;    
-    background: url(image/park.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.cafes_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;    
-    background: url(image/cafes.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.sports_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;    
-    background: url(image/Raków.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.shopping_page:hover ~.image {
-    width:815px;
-    height:300px; 
-    display: flex;    
-    background: url(image/galeria_Jurajska.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
 }
 
 .sub-menu {    
@@ -345,107 +322,72 @@ nav {
 .sub-menu:hover .sub-menu_list {
     display: block;
 }
+/* MENU END */
 
-/*MENU END*/
-
-/*АДПАТИВНАЯ ВЕРСТКА-------------------------------------*/
-
+/* ADAPTIVE LAYOUT */
 @media all and (max-width: 992px) {
     
-    .frame_main {
+    .frame {
         margin: 10px -40px 10px -40px;        
     }
 
-	.container{
+	.container-wrapper{
 	max-width: 750px;
 	}
         
-    .logo {        
+    .header-logo {        
         padding: 25px 0 20px 0;
     }
     
-    .blue_color_flag {        
-        height: 120px;
+    .header-line-bottom {        
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: flex-start ;
         background-color: #4fb9e3;
         position: relative;
     }
-    
+
+    .name-page {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .image-center {
+        max-width: 700px;
+        margin: 30px 0 30px 0; 
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    }
+
+        /* ADAPTIVE MENU 992px */
     .menu_item_link {        
         padding: 5px 12px;    
         font-size: 19px;       
     }
 
-    .image { 
-        width:705px;
-        height:206px;
-        background-image: url(image/main-place-width-705px.jpg); 
-        left: 0px;       
-    }
-    
-    .main_page:hover ~.image {
-        width:705px;
-        height:206px;            
-        background: url(image/main-place-width-705px.jpg);        
-    }
-    
-    .churchs_page:hover ~.image {
-        width:705px;
-        height:206px;        
-        background: url(image/jasna-góra-width-705px.jpg);        
-    }
-    
-    .castles_page:hover ~.image {
-        width:705px;
-        height:206px;        
-        background: url(image/castles-width-705px.jpg);        
-    }
-    
-    .parks_page:hover ~.image {
-        width:705px;
-        height:206px;           
-        background: url(image/park-width-705px.jpg);        
-    }
-    
-    .cafes_page:hover ~.image {
-        width:705px;
-        height:206px;        
-        background: url(image/cafes-width-705px.jpg);        
-    }
-    
-    .sports_page:hover ~.image {
-        width:705px;
-        height:206px;           
-        background: url(image/Raków-width-705px.jpg);        
-    }
-    
-    .shopping_page:hover ~.image {
-        width:705px;
-        height:206px;           
-        background: url(image/galeria-jurajska-width-705px.jpg);        
-    }    
-    .content_and_footer {        
-        margin-top: 110px; 
-        padding-top: 80px;
+    .content-and-footer {        
+        margin-top: 30px; 
+        padding-top: 30px;
         margin-bottom: -0px;
     }
 
     .sub-menu_list {        
         top: 30px;        
     }
+    /* ADAPTIVE MENU 992px END */
 
-    /*FOOTER START media*/
+    /*AДАПТИВ FOOTER 992px*/
     .footer {    
         height: 120px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;     
     }
 
-    .menu_footer_link {
+    .menu-footer_link {
         height: 20px;
         padding-right: 10px;        
         font-size: 21px;
@@ -469,32 +411,96 @@ nav {
         top: -48px;    
     }
 
-    .block_menu_footer_and_icons {
+    .menu-footer-and-icons {
         display:flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    /*FOOTER END media*/
+    /* ADAPTIVE FOOTER 992px END */
 }
 
 @media all and (max-width: 767px) {
     
+    .header {
+        display: none;
+    }
+
+    .frame {
+        border: none;
+        margin: 0;
+        width: 100%;
+    }
+
+    .container-wrapper {
+        width: 100%;
+    }
+
+    .container-without-frame {
+        width: 100%;
+        margin: 0;
+    }
+
+    .content-and-footer {
+        width: 100%;
+        box-shadow: none;
+        margin-top: 95px;
+        padding: 0;
+    }
+
+    .content {
+
+        padding: 20px 10px 0;        
+    }
+
+    .image-center {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .image-center:hover {
+        opacity: 1;
+    }
+
+    .image-center_subsection {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;        
+    }
+
+    .content-text-element{
+        margin: 0 5px 14px;
+        font-size: 16px;
+    }
+
+    .image-right-block {
+        display: none;
+    }
+
+    .image-left-block {
+        display: none;
+    }
     
     .header-wrapper { 
         display:block;   
         width: 100%;
         background-color: #000;
-        position: relative;    
+        position: fixed;    
         text-align: center;
         height: 40px;
     }
     
+    /* MENU BURGER */
     #check-menu{
         display:none;
     }
-    
-    .menu-burger__button{
+
+    .menu-burger_button {
         display: block;
         position: absolute;
         top: 0;
@@ -505,7 +511,7 @@ nav {
         z-index: 2;
         line-height: 40px;
     }
-    
+
     .menu-burger-line{
         position: absolute;
         top: 8px;
@@ -514,7 +520,7 @@ nav {
         height: 2px;
         background-color: black;
         z-index: 6;
-       
+
     }
     
     .second, .third {
@@ -539,16 +545,20 @@ nav {
         z-index: 10;
     }
     
-    .menu-burger__item {
+    .menu-burger_item {
         display: block;
         width: 100%;
-        padding: 15px;
+        padding: 15px 0 0;
         font-weight: bold;
         color:black;
         text-decoration: none;
         text-transform: uppercase;
         border-top: 1px solid rgba(255,255,255,.3);
         background-color: white;
+    }
+
+    .menu-burger_item:last-of-type {
+        padding-bottom: 15px;
     }
     
     #check-menu:checked ~ .menu-burger{
@@ -568,8 +578,15 @@ nav {
     }
     #check-menu:checked ~ .fourth {
         display: none;
-    }    
-        
+    }  
+    /* MENU BURGER END*/  
+    
+    /* ADAPTIVE HEADER 767px */
+    
+    .name-page {
+        display: none;
+    }
+
     .header-line-top {        
         height: 40px;
         background-color: white;
@@ -589,8 +606,7 @@ nav {
         color: white;
         background-color: #4fb9e3;
         position: relative;
-        top: 40px;
-    
+        top: 40px;    
     }
     
     .header-logo {
@@ -598,10 +614,13 @@ nav {
         height: 30px;
         width: 80px;
         position:relative;
-        top: -40px;
+        top: -75px;
+        left: center;
         z-index:10;
     }
-    
+    /* ADAPTIVE HEADER 767px END */
+
+    /* ADAPTIVE CONTENT */
     .section-wrapper {
         display: block;
         width: 100%;    
@@ -614,9 +633,33 @@ nav {
     .section-content {
         margin: 10px 10px 10px 10px;
     }
-    
-    .section-image-mobile {
+        
+    /* ADAPTIVE CONTENT 767px END */
+
+    /* ADAPTIVE FOOTER 767px */
+    .footer {
+        box-shadow: none;
         width: 100%;
+        height: 100%;
+        margin-bottom: 0;
+        align-items: center;
+        flex-direction: column-reverse;
     }
-	
+
+    .menu-footer {
+        display: none;
+    }
+
+    .designed {
+        left: 0;
+        top: 0;
+        padding-top: 10px;
+    }  
+    
+    .icons {
+        height: auto;
+        padding: 10px 0;
+        top: 0;
+    }
+    /* ADAPTIVE FOOTER 767px END */
 }
