@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 .container {
@@ -11,8 +12,9 @@
 }
 
 .frame {
-    max-width: 1000px;   
+    max-width: 1000px;
     display: flex;
+    margin: -40px;
     flex-direction: column;
     align-items: center;
     margin: 10px 0 10px 0;
@@ -24,6 +26,7 @@
     margin: 40px;
 }
 
+/* HEADER */
 .header-line-top {
     max-width: 900px;
     max-height: 150px;
@@ -45,7 +48,7 @@
 
 .header-line-bottom {    
     max-width: 900px;
-    height: 150px;
+    height: 100px;
     display: flex;
     justify-content: center;
     align-items: flex-start ;
@@ -69,19 +72,45 @@
 /* CONTENT */
 .content-and-footer {
     max-width: 860px;
-    margin-top: 150px;
-    margin-bottom: 0px;    
+    margin-top: 30px;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
     text-align:justify;
-    padding: 120px 20px 20px 20px;    
-    font-size: 18px;
+    padding: 20px 20px 20px 20px;    
+    font-size: 20px;
     background-color: white;
     border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
 }
 
-.content-text-element{
-    margin: 0 20px 14px;
-    font-size: 20px;
+.content {
+    padding: 15px 15px 15px 15px;    
+}
+
+.content-text-element {
+    margin-bottom: 13px;
+}
+
+.name-page {
+    margin: 10px 0 0px 0;
+    padding: 5px 0 10px 0;
+    font-size: 40px;   
+    font-weight: bold;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-shadow: 5px 5px 5px #00000042;     
+    border-bottom: 1px solid rgba(0, 0, 0, 0.144);   
+}
+
+.image-center {
+    margin: 30px 0 30px 0; 
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.image-center:hover {
+    opacity: 0.8;
 }
 
 .image-left {
@@ -91,7 +120,7 @@
 }
 
 .image-left-block {
-    margin: 15px 20px 15px 15px; 
+    margin: 15px 20px 15px 0; 
     padding-bottom:10px;   
     font-size: 15px;     
     text-align: center;
@@ -107,7 +136,7 @@
 }
 
 .image-right-block {
-    margin: 15px 15px 15px 20px;
+    margin: 15px 0px 15px 20px;
     padding-bottom: 10px;     
     font-size: 15px;     
     text-align: center;
@@ -115,21 +144,18 @@
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     float: right;   
 }
-
-.main-image-mobile {
-    display: none;
-}
-/* CONTENT END */
+/*CONTENT END*/
 
 /* FOOTER */
 .footer {
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
     height: 100px;
     display:flex;
     flex-direction:column;
     justify-content: space-around;
-    margin-top: 40px;
-    margin-bottom: 30px;    
+    margin-top: 10px;
+    margin-bottom: 20px;    
     background-color: #4fb9e3;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
 }
@@ -220,7 +246,7 @@ nav {
 }
 
 .menu_list {
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;    
 }
 
@@ -244,96 +270,6 @@ nav {
     transition:0.5s;
     transform: scale(1.05);
     text-shadow: 10px 10px 10px #d1d1d1;
-}
-
-.image { 
-    width:850px;
-    height:313px;
-    background-image: url(image/main-place.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
-    list-style:none;
-}
-
-.main_page:hover ~.image {
-    width:850px;
-    height:313px; 
-    display: flex;    
-    background: url(image/main_page/main_image_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
-    transition: 0.5s;
-}
-
-.churches_page:hover ~.main-image {
-    width:850px;
-    height:313px; 
-    display: flex;
-    background: url(image/main_page/Jasna_Góra_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.castles_page:hover ~.main-image {
-    width:850px;
-    height:313px;
-    display: flex;
-    background: url(image/main_page/castles_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.parks_page:hover ~.main-image {
-    width:850px;
-    height:313px; 
-    display: flex;    
-    background: url(image/main_page/park_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.cafes_page:hover ~.main-image {
-    width:850px;
-    height:313px;
-    display: flex;    
-    background: url(image/main_page/cafes_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.sports_page:hover ~.main-image {
-    width:850px;
-    height:313px;
-    display: flex;    
-    background: url(image/main_page/Raków_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
-}
-
-.shopping_page:hover ~.main-image {
-    width:850px;
-    height:313px;
-    display: flex;    
-    background: url(image/main_page/galeria_Jurajska_850.jpg);
-    border-radius: 15px;
-    position:absolute;
-    top: 50px;    
-    transition: 0.5s;
 }
 
 .sub-menu {    
@@ -388,9 +324,6 @@ nav {
 }
 /* MENU END */
 
-<<<<<<< Updated upstream
-/*MENU END*/
-=======
 /* ADAPTIVE LAYOUT */
 @media all and (max-width: 992px) {
     
@@ -407,12 +340,25 @@ nav {
     }
     
     .header-line-bottom {        
-        height: 120px;
+        height: 100px;
         display: flex;
         justify-content: center;
         align-items: flex-start ;
         background-color: #4fb9e3;
         position: relative;
+    }
+
+    .name-page {
+        padding: 0;
+        margin: 0;
+        font-size: 30px;
+    }
+
+    .image-center {
+        max-width: 700px;
+        margin: 30px 0 30px 0; 
+        border-radius: 10px;
+        box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     }
 
         /* ADAPTIVE MENU 992px */
@@ -421,57 +367,9 @@ nav {
         font-size: 19px;       
     }
 
-    .main-image { 
-        width:705px;
-        height:260px;
-        background-image: url(image/main_page/main_image_705.jpg); 
-        left: 0px;       
-    }
-    
-    .main_page:hover ~.main-image {
-        width:705px;
-        height:260px;            
-        background: url(image/main_page/main_image_705.jpg);        
-    }
-    
-    .churches_page:hover ~.main-image {
-        width:705px;
-        height:260px;        
-        background: url(image/main_page/Jasna_Góra_705.jpg);        
-    }
-    
-    .castles_page:hover ~.main-image {
-        width:705px;
-        height:260px;        
-        background: url(image/main_page/castles-width-705px.jpg);        
-    }
-    
-    .parks_page:hover ~.main-image {
-        width:705px;
-        height:260px;           
-        background: url(image/main_page/park-width-705px.jpg);        
-    }
-    
-    .cafes_page:hover ~.main-image {
-        width:705px;
-        height:260px;        
-        background: url(image/main_page/cafes-width-705px.jpg);        
-    }
-    
-    .sports_page:hover ~.main-image {
-        width:705px;
-        height:260px;           
-        background: url(image/main_page/Raków-width-705px.jpg);        
-    }
-    
-    .shopping_page:hover ~.main-image {
-        width:705px;
-        height:260px;           
-        background: url(image/main_page/galeria-jurajska-width-705px.jpg);        
-    }    
     .content-and-footer {        
-        margin-top: 150px; 
-        padding-top: 85px;
+        margin-top: 30px; 
+        padding-top: 30px;
         margin-bottom: -0px;
     }
 
@@ -483,8 +381,8 @@ nav {
     /*AДАПТИВ FOOTER 992px*/
     .footer {    
         height: 120px;
-        margin-top: 30px;
-        margin-bottom: 30px;
+        margin-top: 5px;
+        margin-bottom: 20px;
         display: flex;
         justify-content: center;     
     }
@@ -551,7 +449,28 @@ nav {
     }
 
     .content {
+
         padding: 20px 10px 0;        
+    }
+
+    .image-center {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;
+    }
+
+    .image-center:hover {
+        opacity: 1;
+    }
+
+    .image-center_subsection {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0;
+        box-shadow: none;
+        border-radius: 0;        
     }
 
     .content-text-element{
@@ -663,6 +582,11 @@ nav {
     /* MENU BURGER END*/  
     
     /* ADAPTIVE HEADER 767px */
+    
+    .name-page {
+        display: none;
+    }
+
     .header-line-top {        
         height: 40px;
         background-color: white;
@@ -709,11 +633,7 @@ nav {
     .section-content {
         margin: 10px 10px 10px 10px;
     }
-    
-    .main-image-mobile {
-        display: block;
-        width: 100%;
-    }
+        
     /* ADAPTIVE CONTENT 767px END */
 
     /* ADAPTIVE FOOTER 767px */
@@ -742,278 +662,4 @@ nav {
         top: 0;
     }
     /* ADAPTIVE FOOTER 767px END */
-}
->>>>>>> Stashed changes
-
-/*АДПАТИВНАЯ ВЕРСТКА-------------------------------------*/
-
-@media all and (max-width: 992px) {
-    
-    .frame_main {
-        margin: 10px -40px 10px -40px;        
-    }
-
-	.container{
-	max-width: 750px;
-	}
-        
-    .logo {        
-        padding: 25px 0 20px 0;
-    }
-    
-    .blue_color_flag {        
-        height: 120px;
-        display: flex;
-        justify-content: center;
-        align-items: flex-start ;
-        background-color: #4fb9e3;
-        position: relative;
-    }
-    
-    .menu_item_link {        
-        padding: 5px 12px;    
-        font-size: 19px;       
-    }
-
-    .image { 
-        width:705px;
-        height:206px;
-        background-image: url(image/main-place-width-705px.jpg); 
-        left: 0px;       
-    }
-    
-    .main_page:hover ~.image {
-        width:705px;
-        height:206px;            
-        background: url(image/main-place-width-705px.jpg);        
-    }
-    
-    .churchs_page:hover ~.image {
-        width:705px;
-        height:206px;        
-        background: url(image/jasna-góra-width-705px.jpg);        
-    }
-    
-    .castles_page:hover ~.image {
-        width:705px;
-        height:206px;        
-        background: url(image/castles-width-705px.jpg);        
-    }
-    
-    .parks_page:hover ~.image {
-        width:705px;
-        height:206px;           
-        background: url(image/park-width-705px.jpg);        
-    }
-    
-    .cafes_page:hover ~.image {
-        width:705px;
-        height:206px;        
-        background: url(image/cafes-width-705px.jpg);        
-    }
-    
-    .sports_page:hover ~.image {
-        width:705px;
-        height:206px;           
-        background: url(image/Raków-width-705px.jpg);        
-    }
-    
-    .shopping_page:hover ~.image {
-        width:705px;
-        height:206px;           
-        background: url(image/galeria-jurajska-width-705px.jpg);        
-    }    
-    .content_and_footer {        
-        margin-top: 110px; 
-        padding-top: 80px;
-        margin-bottom: -0px;
-    }
-
-    .sub-menu_list {        
-        top: 30px;        
-    }
-
-    /*FOOTER START media*/
-    .footer {    
-        height: 120px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        display: flex;
-        justify-content: center;     
-    }
-
-    .menu_footer_link {
-        height: 20px;
-        padding-right: 10px;        
-        font-size: 21px;
-    }
-
-    .icons {
-        max-width: 100px;
-        height: 40px;    
-        font-size: 25px;
-        position: relative;      
-    }
-
-    .designed { 
-        max-width: 300px;
-        display: flex;
-        font-style: italic;
-        font-size: 15px;
-        color:white;   
-        position: relative;
-        left: 220px;
-        top: -48px;    
-    }
-
-    .block_menu_footer_and_icons {
-        display:flex;
-        flex-direction: row;
-        justify-content: space-around;
-        flex-wrap: wrap;
-    }
-    /*FOOTER END media*/
-}
-
-@media all and (max-width: 767px) {
-    
-    
-    .header-wrapper { 
-        display:block;   
-        width: 100%;
-        background-color: #000;
-        position: relative;    
-        text-align: center;
-        height: 40px;
-    }
-    
-    #check-menu{
-        display:none;
-    }
-    
-    .menu-burger__button{
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        cursor: pointer;
-        z-index: 2;
-        line-height: 40px;
-    }
-    
-    .menu-burger-line{
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        width: 35px;
-        height: 2px;
-        background-color: black;
-        z-index: 6;
-       
-    }
-    
-    .second, .third {
-        top: 18px;
-    }
-    
-    .fourth{
-        top: 28px;
-    }
-    
-    .menu-burger {
-        display: block;
-        position: absolute;
-        width: 100%;
-        bottom: 0;
-        left: 0;
-        transform: translateY(100%);
-        max-height: 0;
-        font-size: 0;
-        overflow: hidden;
-        transition: .5s all;
-        z-index: 10;
-    }
-    
-    .menu-burger__item {
-        display: block;
-        width: 100%;
-        padding: 15px;
-        font-weight: bold;
-        color:black;
-        text-decoration: none;
-        text-transform: uppercase;
-        border-top: 1px solid rgba(255,255,255,.3);
-        background-color: white;
-    }
-    
-    #check-menu:checked ~ .menu-burger{
-        max-height: 500px;
-        font-size:16px;
-    }
-    #check-menu:checked ~ .first {
-        display: none;
-    }
-    
-    #check-menu:checked ~ .second {
-        transform: rotate(45deg);
-    }
-    
-    #check-menu:checked ~ .third {
-        transform: rotate(-45deg);
-    }
-    #check-menu:checked ~ .fourth {
-        display: none;
-    }    
-        
-    .header-line-top {        
-        height: 40px;
-        background-color: white;
-    }
-    
-    .header-line-middle {        
-        height: 5px;
-        background-color: yellow;
-        position:relative;
-        top: 40px;
-    }
-    
-    .header-line-bottom {    
-        height: 40px;
-        padding-top: 10px;
-        font-size: 19px;
-        color: white;
-        background-color: #4fb9e3;
-        position: relative;
-        top: 40px;
-    
-    }
-    
-    .header-logo {
-        content: url(image/logo.jpg);
-        height: 30px;
-        width: 80px;
-        position:relative;
-        top: -40px;
-        z-index:10;
-    }
-    
-    .section-wrapper {
-        display: block;
-        width: 100%;    
-        text-align: justify;
-        justify-content: center;
-        position: relative;    
-        top: 45px;  
-    }
-    
-    .section-content {
-        margin: 10px 10px 10px 10px;
-    }
-    
-    .section-image-mobile {
-        width: 100%;
-    }
-	
 }
