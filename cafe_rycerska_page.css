@@ -258,7 +258,7 @@ nav {
   font-weight: bold;
   color: aliceblue;
   text-decoration: none;
-  text-transform: uppercase; /*все символы прописные*/
+  text-transform: uppercase;
 }
 
 .menu_item {
