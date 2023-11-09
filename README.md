@@ -6,4 +6,8 @@ Website about the Polish city of Czestochowa about its history, sights and place
 
 ## Actions to view the project:
 
-To run this site, you need to open the main-page.html file in the browser.
+You can view this project at [here](https://chekhanadski.github.io/Czestochowa_website_HTML-CSS/index.html)
+
+or
+
+To run this site, you need to open the index.html file in the browser.
